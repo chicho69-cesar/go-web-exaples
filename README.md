@@ -14,3 +14,7 @@ Para seguir estos ejemplos es necesario que ya tengas instalado Go y que por lo 
 - Funciones, estructuras e interfaces
 - Concurrencia y paralelismo
 - Testing
+
+## Logo de GoLang(*Mascota Gopher*)
+
+![Gopher](https://www.golinuxcloud.com/wp-content/uploads/goher2-1.jpg)
