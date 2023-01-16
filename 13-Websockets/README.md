@@ -10,13 +10,12 @@ De ahora en adelante, cada aplicación que escribamos podrá hacer uso de esta b
 
 ## Crear un servidor de Sockets con Go
 
-Para crear nuestro servidor que acepte conexiones a traves de sockets, lo que vamos a hacer primero es definir un objeto `upgrader` que es el que nos va a ayudar a controlar el tamaño del buffer de lectura y escritura de nuestros sockets, para ello usamos: 
-
+Para crear nuestro servidor que acepte conexiones a traves de sockets, lo que vamos a hacer primero es definir un objeto `upgrader` que es el que nos va a ayudar a controlar el tamaño del buffer de lectura y escritura de nuestros sockets, para ello usamos:
 
 ```go
 var upgrader = websocket.Upgrader{
-	ReadBufferSize:  1024,
-	WriteBufferSize: 1024,
+  ReadBufferSize:  1024,
+  WriteBufferSize: 1024,
 }
 ```
 
@@ -71,7 +70,7 @@ Despues montamos nuestro documento de `websockets.html` el cual a traves de codi
 </script>
 ```
 
-En el servidor: 
+En el servidor:
 
 ```go
 http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
